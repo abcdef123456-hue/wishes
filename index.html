@@ -3,50 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Wish From The Heart</title>
+    <title>Happy Birthday Samreen</title>
     <style>
-        body {
+        * {
             margin: 0;
-            height: 100vh;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #2b0c2c;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            color: #ffffff;
         }
+
         .card {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            text-align: center;
+            background: linear-gradient(145deg, #441740, #350f32);
+            border-radius: 24px;
+            padding: 40px 24px;
+            width: 90%;
             max-width: 400px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
-        .heart {
-            font-size: 60px;
-            animation: pulse 1s infinite alternate;
-            margin-bottom: 20px;
+
+        .avatar-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 24px;
         }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            100% { transform: scale(1.2); }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #ff9a9e, #fecfef);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            box-shadow: 0 4px 15px rgba(254, 207, 239, 0.4);
         }
+
         h1 {
-            color: #ff4b6e;
-            margin-bottom: 15px;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #ffffff;
         }
-        p {
-            color: #555;
-            line-height: 1.6;
-            font-size: 18px;
+
+        .message {
+            font-size: 16px;
+            color: #e0d0e0;
+            line-height: 1.5;
+            margin-bottom: 32px;
+        }
+
+        .btn-container {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 32px;
+            margin-bottom: 24px;
+        }
+
+        .btn {
+            background: linear-gradient(90deg, #ff5e7e, #ff4b6e);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #a080a0;
+        }
+
+        .heart {
+            color: #ff4b6e;
         }
     </style>
 </head>
 <body>
+
     <div class="card">
-        <div class="heart">❤️</div>
-        <h1>Warm Wishes</h1>
-        <p>Sending you a little extra sunshine today. May your heart be full, your day be bright, and everything go wonderfully well!</p>
+        <div class="avatar-container">
+            <div class="avatar">🎂</div>
+        </div>
+        
+        <h1>For Samreen</h1>
+        <p class="message">Wishing you a birthday as bright and beautiful as your smile <span class="heart">✨💕</span></p>
+        
+        <div class="btn-container">
+            <button class="btn" onclick="alert(' Sending you a little extra sunshine today. May your heart be full, your day be bright, and everything will go wonderfully well! ,Happy Birthday! May your day be packed with love, sweet surprises, and countless blessings. 🎉🎂🎈')">Open my message</button>
+        </div>
+        
+        <div class="footer">
+            Made with <span class="heart">💓</span> and endless care
+        </div>
     </div>
+
 </body>
 </html>
